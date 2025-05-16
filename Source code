@@ -1,4 +1,4 @@
-# Install required packages (if not already installed)
+# Install required packages (if running in Colab or new environment)
 !pip install -q matplotlib seaborn scikit-learn pandas
 
 # Import necessary libraries
@@ -10,8 +10,8 @@ from sklearn.preprocessing import LabelEncoder, StandardScaler
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import classification_report, confusion_matrix
 
-# Load dataset
-df = pd.read_csv("customer_churn_sample.csv")
+# Load dataset from GitHub (replace with your actual GitHub raw link if running in Colab)
+df = pd.read_csv("customer_churn.csv")
 
 # Drop non-predictive column
 df = df.drop("CustomerID", axis=1)
