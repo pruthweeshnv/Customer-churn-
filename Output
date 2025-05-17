@@ -1,0 +1,19 @@
+Sample Data:
+  Customer_ID  Tenure_Months  Monthly_Charges Churn
+0    CUST1000             28            32.56   Yes
+1    CUST1001             16           117.13   Yes
+2    CUST1002             21            26.02   Yes
+3    CUST1003             64           106.53    No
+4    CUST1004             71            56.39   Yes
+
+Accuracy: 0.6666666666666666
+
+Classification Report:
+               precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00         0
+           1       1.00      0.67      0.80         3
+
+    accuracy                           0.67         3
+   macro avg       0.50      0.33      0.40         3
+weighted avg       1.00      0.67      0.80
